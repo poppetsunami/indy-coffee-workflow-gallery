@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Indy Coffee Box · Research gallery</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f1eb;color:#242021;font:16px/1.5 system-ui,sans-serif}.gate{min-height:100dvh;display:grid;place-items:center;padding:24px}.panel{max-width:480px;width:100%;background:#fffdfa;border:1px solid #d8d0c7;border-radius:18px;padding:40px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#285b49;font-weight:750}h1{font-size:36px;line-height:1.12;letter-spacing:-1px;margin:20px 0}p{color:#655e59}label{display:block;font-weight:600;margin-top:28px}input{width:100%;padding:14px;margin:8px 0 16px;border:1px solid #a69d93;border-radius:8px;font:inherit}button{padding:14px 22px;background:#285b49;color:white;border:0;border-radius:8px;font:600 16px system-ui;cursor:pointer}button:disabled{opacity:.6;cursor:wait}form button{width:100%}#message{min-height:24px;margin-bottom:0;font-size:14px}#viewer{height:calc(100dvh - 48px);width:100%;border:0;display:block;background:#f5f1eb}.toolbar{height:48px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:#242021;color:#fff;font-size:13px}.toolbar button{padding:5px 14px;font-size:13px;background:#fff;color:#242021}[hidden]{display:none!important}a{color:#285b49}@media(max-width:520px){.panel{padding:28px}h1{font-size:30px}}
+</style>
+<script src="vault.js" defer></script>
+</head>
+<body>
+<main class="gate" id="gate"><section class="panel"><div class="eyebrow">Indy Coffee Box</div><h1>Competitive research gallery</h1><p>Enter the shared password to view the workflow screenshots and findings.</p><form id="unlock"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required autofocus><button id="submit" type="submit">Open gallery</button><p id="message" role="status" aria-live="polite"></p></form></section></main>
+<div id="workspace" hidden><div class="toolbar"><span>Indy Coffee Box · Research</span><button id="lock" type="button">Lock gallery</button></div><iframe id="viewer" title="Coffee subscription workflows" referrerpolicy="no-referrer"></iframe></div>
+</body></html>
