@@ -48,6 +48,12 @@
         }), { rootMargin: '400px' });
         document.querySelectorAll('img[data-vault-path]').forEach(img => watch.observe(img));
         document.addEventListener('click', event => {
+          const link = event.target.closest('a[href]');
+          if (link && !link.dataset.vaultPath && link.getAttribute('href').startsWith('#')) {
+            const target = document.getElementById(link.getAttribute('href').slice(1));
+            if (target) { event.preventDefault(); target.scrollIntoView(); }
+            return;
+          }
           const a = event.target.closest('a[data-vault-path]'); if (!a) return;
           event.preventDefault();
           const preview = window.open('about:blank', '_blank');
